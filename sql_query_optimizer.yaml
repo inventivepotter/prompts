@@ -1,9 +1,9 @@
 category: database
 description: Analyzes and optimizes SQL queries for better performance
-failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
+failover_model: lmstudio:gemma-3-270m-it-mlx
 id: inventivepotter/prompts:sql_query_optimizer.yaml
 max_tokens: 1536
-model: gemma-3-270m-it-mlx
+model: qwen/qwen3-30b-a3b-2507
 name: SQL Query Optimizer
 prompt: "You are a database optimization expert. Analyze the following SQL query and\
   \ provide optimization suggestions:\n\n**Query**: \n```sql\n{query}\n```\n\n**Schema\
@@ -21,4 +21,4 @@ tags:
 - database
 temperature: 0.3
 top_p: 0.8
-updated_at: '2025-10-24T03:28:16.846491'
+updated_at: '2025-10-24T21:47:58.578519'
