@@ -1,38 +1,58 @@
-name: "GraphQL Schema Designer"
-description: "Designs GraphQL schemas for APIs"
-category: "api-design"
+category: api-design
+description: Designs GraphQL schemas for APIs
+failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
+id: inventivepotter/prompts:graphql_schema_designer.yaml
+max_tokens: 2048
+model: models/gemini-2.5-flash
+name: GraphQL Schema Designer
+prompt: 'You are a GraphQL expert. Design a schema for:
+
+
+  **Domain**: {domain}
+
+  **Entities**: {entities}
+
+  **Operations**: {operations}
+
+
+  Provide:
+
+  1. Type definitions for all entities
+
+  2. Query definitions
+
+  3. Mutation definitions
+
+  4. Subscription definitions (if applicable)
+
+  5. Input types
+
+  6. Enum types
+
+  7. Interface and Union types (where appropriate)
+
+  8. Example queries and mutations
+
+  9. Best practices for schema organization
+
+
+  Follow GraphQL best practices and naming conventions.
+
+
+  Design a GraphQL schema for:
+
+  Domain: {{domain}}
+
+  Entities: {{entities}}
+
+  Operations: {{operations}}'
+provider: gemini
+reasoning_effort: auto
 tags:
-  - graphql
-  - api
-  - schema
-  - design
-provider: "openai"
-model: "gpt-4o"
-failover_model: "claude-3.5-sonnet"
+- graphql
+- api
+- schema
+- design
 temperature: 0.3
 top_p: 0.9
-max_tokens: 2048
-prompt: |
-  You are a GraphQL expert. Design a schema for:
-  
-  **Domain**: {domain}
-  **Entities**: {entities}
-  **Operations**: {operations}
-  
-  Provide:
-  1. Type definitions for all entities
-  2. Query definitions
-  3. Mutation definitions
-  4. Subscription definitions (if applicable)
-  5. Input types
-  6. Enum types
-  7. Interface and Union types (where appropriate)
-  8. Example queries and mutations
-  9. Best practices for schema organization
-  
-  Follow GraphQL best practices and naming conventions.
-  
-  Design a GraphQL schema for:
-  Domain: {{domain}}
-  Entities: {{entities}}
-  Operations: {{operations}}
+updated_at: '2025-10-24T02:42:11.886498'
