@@ -1,40 +1,24 @@
-name: "SQL Query Optimizer"
-description: "Analyzes and optimizes SQL queries for better performance"
-category: "database"
-tags:
-  - sql
-  - optimization
-  - performance
-  - database
-provider: "anthropic"
-model: "claude-3-haiku"
-failover_model: "gpt-3.5-turbo"
-temperature: 0.2
-top_p: 0.8
+category: database
+description: Analyzes and optimizes SQL queries for better performance
+failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
+id: inventivepotter/prompts:sql_query_optimizer.yaml
 max_tokens: 1536
-prompt: |
-  You are a database optimization expert. Analyze the following SQL query and provide optimization suggestions:
-  
-  **Query**: 
-  ```sql
-  {query}
-  ```
-  
-  **Schema Info**: {schema}
-  **Performance Issues**: {issues}
-  
-  Provide:
-  1. Query analysis
-  2. Performance bottlenecks
-  3. Optimized query version
-  4. Index recommendations
-  5. Explanation of improvements
-  6. Alternative approaches if applicable
-  
-  Focus on query execution plans and database-specific optimizations.
-  
-  Optimize this SQL query:
-  {{query}}
-  
-  Schema: {{schema}}
-  Performance Issues: {{issues}}
+model: gemma-3-270m-it-mlx
+name: SQL Query Optimizer
+prompt: "You are a database optimization expert. Analyze the following SQL query and\
+  \ provide optimization suggestions:\n\n**Query**: \n```sql\n{query}\n```\n\n**Schema\
+  \ Info**: {schema}\n**Performance Issues**: {issues}\n\nProvide:\n1. Query analysis\n\
+  2. Performance bottlenecks\n3. Optimized query version\n4. Index recommendations\n\
+  5. Explanation of improvements\n6. Alternative approaches if applicable\n\nFocus\
+  \ on query execution plans and database-specific optimizations.\n\nOptimize this\
+  \ SQL query:\n{{query}}\n\nSchema: {{schema}}\nPerformance Issues: {{issues}}"
+provider: lmstudio
+reasoning_effort: auto
+tags:
+- sql
+- optimization
+- performance
+- database
+temperature: 0.3
+top_p: 0.8
+updated_at: '2025-10-24T03:28:16.846491'
