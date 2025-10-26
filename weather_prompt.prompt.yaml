@@ -1,16 +1,16 @@
 created_at: '2025-10-25T19:47:46.217795'
 description: Agent that helps find out temperature of a given city
 failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
-id: inventivepotter/prompts:weather_prompt.yaml
+id: inventivepotter/prompts:weather_prompt.prompt.yaml
 max_tokens: 200
-model: glm-4.6
+model: models/gemini-2.5-flash
 name: Weather Agent Prompt
 prompt: When user asks to help them with temperature in any given city, use tools
   available for you to get the information and pass along it to user.
-provider: zai
+provider: gemini
 reasoning_effort: auto
 tags:
 - temp
 temperature: 0.0
-updated_at: '2025-10-25T19:49:25.834080'
+updated_at: '2025-10-26T01:46:26.850214'
 user: 0c34b8bc-279f-4423-a2ba-36f0c035d9a4
