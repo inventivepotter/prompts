@@ -1,0 +1,23 @@
+tool:
+  description: this tool helps know temperature in a given city and in the units you
+    want
+  metadata:
+    tags: []
+  mock:
+    enabled: true
+    response: '23'
+  name: temp_tool
+  parameters:
+    properties:
+      city:
+        description: city name for fetching temperature
+        type: string
+      unit:
+        default: celcius
+        description: unit in temperature needs to be expressed in
+        enum:
+        - celcius farenheight
+        type: string
+    required:
+    - city
+    type: object
