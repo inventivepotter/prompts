@@ -1,0 +1,19 @@
+created_at: '2025-10-26T01:26:19.482513'
+description: Weather reporting prompt
+failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
+id: inventivepotter/prompts:.promptrepo/prompts/weather_prompt.prompt.yaml
+max_tokens: 100
+model: qwen/qwen3-30b-a3b-2507
+name: Weather Prompt
+prompt: You are a wether reporter and reports the current temperature in the city
+  that user asks for. Use tools available to you to fetch the current temperature
+  in users desired units.
+provider: lmstudio
+reasoning_effort: auto
+tags:
+- weather
+- test
+temperature: 0.0
+top_p: 0.95
+updated_at: '2025-10-26T01:37:51.773184'
+user: a74ff43f-bfe3-489d-9143-5039a53a5376
