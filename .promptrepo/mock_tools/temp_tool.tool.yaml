@@ -1,11 +1,16 @@
 tool:
   description: this tool helps know temperature in a given city and in the units you
     want
-  metadata:
-    tags: []
   mock:
+    conditional_rules:
+    - conditions:
+        city: new york
+        unit: celcius
+      output: '24'
     enabled: true
+    mock_type: conditional
     response: '23'
+    static_response: '23'
   name: temp_tool
   parameters:
     properties:
