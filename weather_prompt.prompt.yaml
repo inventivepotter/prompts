@@ -12,5 +12,8 @@ reasoning_effort: auto
 tags:
 - temp
 temperature: 0.0
-updated_at: '2025-10-26T01:47:36.763941'
+tools:
+- file:///.promptrepo/mock_tools/temp_tool.tool.yaml
+top_p: 1.0
+updated_at: '2025-10-27T02:40:42.067592'
 user: 0c34b8bc-279f-4423-a2ba-36f0c035d9a4
