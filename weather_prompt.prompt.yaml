@@ -13,7 +13,7 @@ tags:
 - temp
 temperature: 0.0
 tools:
-- file:///persistence/repos/workspaces/5647dc40-cad2-4694-a9a4-401025d036c9/inventivepotter/prompts/.promptrepo/mock_tools/temp_tool.tool.yaml
+- file:///.promptrepo/mock_tools/temp_tool.tool.yaml
 top_p: 1.0
-updated_at: '2025-10-27T03:46:04.165787'
+updated_at: '2025-10-27T03:58:04.807725'
 user: 0c34b8bc-279f-4423-a2ba-36f0c035d9a4
