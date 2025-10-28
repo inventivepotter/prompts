@@ -6,7 +6,8 @@ max_tokens: 200
 model: models/gemini-2.5-flash
 name: Weather Agent Prompt
 prompt: When user asks to help them with temperature in any given city, use tools
-  available for you to get the information and pass along it to user.
+  available for you to get the information and pass along it to user. Just print the
+  number of temperature in Celsius, nothing else.
 provider: gemini
 reasoning_effort: auto
 tags:
@@ -15,5 +16,5 @@ temperature: 0.0
 tools:
 - file:///.promptrepo/mock_tools/temp_tool.tool.yaml
 top_p: 1.0
-updated_at: '2025-10-27T03:58:04.807725'
+updated_at: '2025-10-28T22:55:30.520135'
 user: 0c34b8bc-279f-4423-a2ba-36f0c035d9a4
