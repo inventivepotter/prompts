@@ -1,11 +1,10 @@
 tool:
   description: this tool helps know temperature in a given city and in the units you
     want
-  metadata:
-    tags: []
   mock:
     enabled: true
-    response: '23'
+    mock_type: static
+    static_response: '23'
   name: temp_tool
   parameters:
     properties:
