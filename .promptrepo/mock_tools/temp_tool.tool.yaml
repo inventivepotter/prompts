@@ -1,22 +1,22 @@
 tool:
   description: this tool helps know temperature in a given city and in the units you
     want
-  metadata:
-    tags: []
   mock:
+    content_type: json
     enabled: true
-    response: '23'
+    mock_type: static
+    static_response: '{"result":23}'
   name: temp_tool
   parameters:
     properties:
       city:
-        description: city name for fetching temperature
+        description: name of the city for which temperature is being asked for
         type: string
       unit:
         default: celcius
-        description: unit in temperature needs to be expressed in
+        description: units in which you want the temp in
         enum:
-        - celcius farenheight
+        - celcius farenhieght
         type: string
     required:
     - city
