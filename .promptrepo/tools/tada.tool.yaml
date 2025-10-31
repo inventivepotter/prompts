@@ -1,0 +1,13 @@
+tool:
+  description: tada
+  mock:
+    content_type: string
+    enabled: true
+    mock_type: static
+    static_response: ''
+  name: tada
+  parameters:
+    properties: {}
+    required: []
+    type: object
+  updated_at: '2025-10-31T19:41:08.903411+00:00'
