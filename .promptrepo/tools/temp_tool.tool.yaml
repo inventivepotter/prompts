@@ -1,0 +1,22 @@
+tool:
+  description: temperature for a city
+  mock:
+    content_type: json
+    enabled: true
+    mock_type: static
+    static_response: '{"result":23}'
+  name: temp_tool
+  parameters:
+    properties:
+      city:
+        description: city name
+        type: string
+      unit:
+        description: temperature unit
+        enum:
+        - celcius farenheight
+        type: string
+    required:
+    - city
+    type: object
+  updated_at: '2025-10-31T20:21:30.671250+00:00'
