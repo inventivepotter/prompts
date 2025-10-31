@@ -1,0 +1,24 @@
+eval:
+  created_at: '2025-10-31T16:18:20.161000+00:00'
+  description: ''
+  metrics:
+  - include_reason: false
+    model: null
+    provider: null
+    strict_mode: false
+    threshold: 0.7
+    type: exact_match
+  name: strict match
+  tags: []
+  tests:
+  - description: null
+    enabled: true
+    name: verify weather
+    prompt_reference: weather_prompt.prompt.yaml
+    template_variables: {}
+    test_fields:
+      config:
+        expected_output: The temperature in New York is 23C.
+      metric_type: null
+    user_message: new york
+  updated_at: '2025-10-31T16:19:41.810839+00:00'
