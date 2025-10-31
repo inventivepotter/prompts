@@ -1,0 +1,17 @@
+eval_suite:
+  created_at: '2025-10-31T03:01:34.914000+00:00'
+  description: ''
+  evals:
+  - description: null
+    enabled: true
+    evaluation_fields:
+      config: {}
+      metric_type: null
+    name: yo-test
+    prompt_reference: weather_prompt.prompt.yaml
+    template_variables: {}
+    user_message: asdf
+  metrics: []
+  name: suite-2
+  tags: []
+  updated_at: '2025-10-31T03:08:10.025700+00:00'
