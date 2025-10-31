@@ -2,11 +2,11 @@ created_at: '2025-10-25T19:47:46.217795'
 description: Agent that helps find out temperature of a given city
 failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
 max_tokens: 200
-model: models/gemini-2.5-flash
+model: qwen/qwen3-30b-a3b-2507
 name: Weather Agent Prompt
 prompt: When user asks to help them with temperature in any given city, use tools
   available for you to get the information and pass along it to user.
-provider: gemini
+provider: lmstudio
 reasoning_effort: auto
 tags:
 - temp
@@ -14,5 +14,5 @@ temperature: 0.0
 tools:
 - file:///.promptrepo/tools/temp_tool.tool.yaml
 top_p: 1.0
-updated_at: '2025-10-31T20:22:01.762277+00:00'
+updated_at: '2025-10-31T20:22:12.039257+00:00'
 user: cbfa4d46-0ec5-4faf-bbbf-1a3ced9e256e
