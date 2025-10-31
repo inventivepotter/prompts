@@ -1,0 +1,23 @@
+tool:
+  description: a tool to fetch temp of a given city in given units, default unit is
+    celcius
+  mock:
+    content_type: json
+    enabled: true
+    mock_type: static
+    static_response: '{"result":23}'
+  name: temp_tool
+  parameters:
+    properties:
+      city:
+        description: city for which temperature is requested for
+        type: string
+      unit:
+        description: unit of temperature
+        enum:
+        - celcius farenheight
+        type: string
+    required:
+    - city
+    type: object
+  updated_at: '2025-10-31T19:39:46.141366+00:00'
