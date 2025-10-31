@@ -19,6 +19,12 @@ eval_suite:
     strict_mode: false
     threshold: 0.7
     type: exact_match
+  - include_reason: true
+    model: qwen/qwen3-30b-a3b-2507
+    provider: zai
+    strict_mode: false
+    threshold: 0.7
+    type: answer_relevancy
   name: suit-1
   tags: []
-  updated_at: '2025-10-31T02:01:14.767384+00:00'
+  updated_at: '2025-10-31T02:05:06.089432+00:00'
