@@ -1,0 +1,14 @@
+tool:
+  created_at: '2025-11-02T22:55:27.375733'
+  description: returns hi
+  mock:
+    content_type: string
+    enabled: true
+    mock_type: static
+    static_response: Hi
+  name: test_tool
+  parameters:
+    properties: {}
+    required: []
+    type: object
+  updated_at: '2025-11-02T22:55:27.377211+00:00'
