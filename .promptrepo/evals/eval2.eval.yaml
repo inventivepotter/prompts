@@ -1,0 +1,24 @@
+eval:
+  created_at: '2025-11-05T14:13:30.775000+00:00'
+  description: e
+  metrics:
+  - include_reason: false
+    model: null
+    provider: null
+    strict_mode: false
+    threshold: 0.7
+    type: exact_match
+  name: eval2
+  tags: []
+  tests:
+  - description: asdf
+    enabled: true
+    name: a
+    prompt_reference: weather_prompt.prompt.yaml
+    template_variables: {}
+    test_fields:
+      config:
+        expected_output: '23'
+      metric_type: null
+    user_message: new york
+  updated_at: '2025-11-05T14:13:52.175036+00:00'
