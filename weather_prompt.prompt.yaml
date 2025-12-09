@@ -1,7 +1,6 @@
 created_at: '2025-10-25T19:47:46.217795'
 description: Agent that helps find out temperature of a given city
 failover_model: lmstudio:qwen/qwen3-30b-a3b-2507
-id: inventivepotter/prompts:weather_prompt.prompt.yaml
 max_tokens: 200
 model: models/gemini-2.5-flash
 name: Weather Agent Prompt
@@ -13,7 +12,7 @@ tags:
 - temp
 temperature: 0.0
 tools:
-- file:///.promptrepo/mock_tools/temp_tool.tool.yaml
+- .promptrepo/mock_tools/temp_tool.tool.yaml
 top_p: 1.0
-updated_at: '2025-10-27T03:58:04.807725'
-user: 0c34b8bc-279f-4423-a2ba-36f0c035d9a4
+updated_at: '2025-12-09T09:50:54.989885+00:00'
+user: Krishna C
