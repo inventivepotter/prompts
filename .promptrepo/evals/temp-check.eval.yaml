@@ -21,4 +21,4 @@ eval:
         expected_output: Weather in New York is 23 centigrade
       metric_type: null
     user_message: what is weather in new york in centigrade
-  updated_at: '2025-12-09T10:15:54.909138+00:00'
+  updated_at: '2025-12-09T10:22:27.442284+00:00'
